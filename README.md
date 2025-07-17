@@ -111,4 +111,41 @@ Instead of pasting an entire CV, users fill out structured sections: **Experienc
 ---
 
 ## 🧠 Prompt Example (AI Mode)
+Given the following experience:
+"Developed a logistics dashboard with Angular and Spring Boot..."
+
+And the job description:
+"Looking for engineers with experience in supply chain analytics using Angular and REST APIs..."
+
+Rewrite the experience to better match the job posting.
+---
+
+## 📁 Project Structure
+IkigaiResume/
+├── electron/ # Electron main process
+│ └── main.ts
+├── src/
+│ ├── routes/ # Pages (CV, Job Post, Tailor, Settings)
+│ ├── components/ # Form inputs, Preview, Match Results
+│ ├── lib/ # Tailoring logic, AI prompt builder
+│ ├── stores/ # Svelte stores for app state
+├── static/ # Assets
+├── package.json
+├── vite.config.js
+├── electron-builder.config.js
+
+---
+
+## 💬 Contributing
+
+This is a solo project for now, but contributions are welcome if open-sourced.  
+Planned license: **MIT**
+
+---
+
+## 📌 Final Notes
+
+- No internet connection required for rule-based tailoring
+- AI mode works with local models or Claude/OpenAI if enabled
+- Everything runs locally — your data never leaves your machine by default
 
